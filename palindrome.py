@@ -1,11 +1,14 @@
 def is_palindrome(sentence):
-    # TODO: return True or False if the sentence is or isn't a palindrome
-    pass
+    new_word = []
+    for c in sentence:
+        if c.isalpha():
+            new_word.append(c.lower())
+    return new_word == new_word[::-1]
 
 
 def main():
-    # TODO: put your input/output code here
-    pass
+    user_input = input("What are we testing today: ")
+    is_palindrome(user_input)
 
 
 if __name__ == '__main__':
